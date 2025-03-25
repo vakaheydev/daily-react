@@ -23,14 +23,15 @@ const User = () => {
     }, [id]);
 
     if (!user) {
+        console.log("Loading user...")
         return <p>Загрузка...</p>
     }
 
     return (
         <div>
-            <h1>Логин: {user.login}</h1>
-            <h1>Роль: {user.userType.name}</h1>
-            <h1>Расписания: </h1>
+            <h3>Логин: {user.login}</h3>
+            <h3>Роль: {user.userType.name}</h3>
+            <h3>Расписания: </h3>
             <ul>
                 {user.schedules.map(schedule => {
                     return (

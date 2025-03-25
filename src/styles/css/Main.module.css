@@ -1,0 +1,15 @@
+body.custom-body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.center-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

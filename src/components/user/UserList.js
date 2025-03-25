@@ -19,6 +19,11 @@ const UserList = () => {
         fetchUsers()
     }, []);
 
+    if (users.size === 0) {
+        console.log("Loading users...")
+        return <p>Загрузка...</p>
+    }
+
     return (
         <div>
             <h2>Список пользователей</h2>
